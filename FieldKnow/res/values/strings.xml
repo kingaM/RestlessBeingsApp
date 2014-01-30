@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="User">Username</string>
+    <string name="Pass">Password</string>
+    <string name="register">Register</string>
+    <string name="update">Update</string>
+    <string name="hello">Hello World, FieldKnowActivity!</string>
+    <string name="app_name">FieldKnow</string>
+    <string name="login">Login: </string>
+    <string name="password">Password: </string>
+    <string name="loginButton">Login</string>
+    <string name="forgot">Forgot password or login</string>
+    <string name="newuser">New User</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="submit">Submit</string>
+    <string name="prompt"/>
+    <string name="main_text_view_string">Click the button below to take a picture</string>
+	<string name="camera_button_text">CAMERA BUTTON</string>
+</resources>

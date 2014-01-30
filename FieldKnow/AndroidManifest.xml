@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.comp1008.MrugalaBartlett.FieldKnow"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+   	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+   	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+   	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application
+        android:name=".MainApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" 
+        android:theme="@android:style/Theme.Light" >
+        <activity
+            android:name=".FieldKnowMainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+    	<activity android:name=".MenuActivity" />
+        
+        <activity android:name=".DataCollect.DataCollectActivity" />
+        <activity android:name=".DataCollect.BasicInfoActivity" />
+        <activity android:name=".DataCollect.LivingConditionsActivity" />
+        <activity android:name=".DataCollect.HistoryActivity" />
+        <activity android:name=".DataCollect.ParentsActivity" />
+        <activity android:name=".DataCollect.CriticalConditionActivity" />
+        <activity android:name=".DataCollect.PersonPhotoActivity" />
+        <activity android:name=".DataCollect.CommentQsActivity" />
+        <activity android:name=".DataCollect.ClosedQsActivity" />
+        <activity android:name=".DataCollect.RankedQsActivity" />
+        <activity android:name=".DataCollect.CurrentLocationActivity" />
+             
+        <activity android:name=".DataManager.NetworkActivity" />
+        <activity android:name=".DataManager.DataWipeActivity" />
+        <activity android:name=".DataManager.EmailActivity" />
+        
+        <activity android:name=".DataManager.GSONActivity" />
+        
+        <activity android:name=".Finance.FinanceActivity" />
+        <activity android:name=".Finance.FinancePhotoActivity" />
+        <activity android:name=".Finance.ItemRequestActivity" />
+        <activity android:name=".Finance.FinanceGetLocationActivity" />
+        
+        <activity android:name=".Search.CustomListActivity" />
+        <activity android:name=".Search.EditActivity" />
+        <activity android:name=".Search.SearchActivity" />
+
+		<activity android:name=".Statistics.StatisticsActivity" />
+        
+        <activity android:name=".UserRelated.UpdateDetailsActivity" />
+        <activity android:name=".UserRelated.UpdateEmail" />
+        <activity android:name=".UserRelated.RegisterActivity" />     
+        <activity android:name=".UserRelated.SettingsActivity" />
+  
+        <activity android:name=".Web.WebActivity" />
+        <activity android:name=".Web.GetZipAddressActivity" />
+        <activity android:name=".Web.WebViewActivity" />
+        <activity android:name=".Web.DownloadActivity" />
+        <activity android:name=".Web.LoadPagesActivity" />
+
+        <activity android:name="org.achartengine.GraphicalActivity"/>
+        
+    </application>  
+
+</manifest>

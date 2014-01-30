@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose what you want to see"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/statisticsSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/FromLL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="From: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/fromStat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.74"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ToLL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="To: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/toStat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.16"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/GenderLL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+   
+	    <TextView
+	            android:id="@+id/textView11"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Gender: "
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        
+	        <RadioGroup android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal"
+				android:id="@+id/genderStat">
+	
+		        <RadioButton
+		            android:id="@+id/maleStat"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Male" 
+		            android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		        <RadioButton
+		            android:id="@+id/femaleStat"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Female" 
+		            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        
+	        </RadioGroup>
+        
+         </LinearLayout>
+
+    <Button
+        android:id="@+id/submitStat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+</LinearLayout>

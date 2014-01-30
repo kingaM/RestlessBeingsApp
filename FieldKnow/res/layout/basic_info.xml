@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:scrollbarAlwaysDrawVerticalTrack="true">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter basic information"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <RadioGroup android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:id="@+id/gender">
+
+	        <RadioButton
+	            android:id="@+id/male"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Male" 
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	        <RadioButton
+	            android:id="@+id/female"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Female" 
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        </RadioGroup>
+        
+		<TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age (years): "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+        
+        <TextView
+            android:id="@+id/heightT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height (cms): "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+        
+        <TextView
+            android:id="@+id/textreligion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Religion: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/religion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/prompt" />
+        
+        <TextView
+            android:id="@+id/pob5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place of birth: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/pob"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        
+       <Button 
+           android:id="@+id/submit"
+           android:layout_width="fill_parent"
+		   android:layout_height="wrap_content"
+		   android:text="Submit" />
+
+    </LinearLayout>
+    
+
+</ScrollView>

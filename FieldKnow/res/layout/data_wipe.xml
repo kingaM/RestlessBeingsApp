@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/dataWipeBool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable DataWipe after successful upload of data"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:onClick="onCheckboxClicked"
+        android:checked="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <Button
+        android:id="@+id/dataWipeNow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Wipe data now"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>
